@@ -11,17 +11,18 @@ class AggregatorImpl: Aggregator {
     override var sortedAll = mutableListOf<Post>()
 
     override fun add(posts: List<Post>) {
-        var sortedPosts = posts.sortedBy { it.date }
+        var sortedPosts = posts.sortedByDescending { it.date }
         val wasCount = sortedAll.size
         val beforePost = lastPost
         if (beforePost != null && sortedPosts.contains(beforePost)) {
             Logger.info("Need drop posts")
-
             sortedPosts = sortedPosts.dropWhile {
                 it.date >= beforePost.date
             }
         }
-        lastPost = sortedPosts.firstOrNull()
+        if (sortedPosts.isNotEmpty() && lastPost?.date?.isAfter(sortedPosts.last().date) != false) {
+            lastPost = sortedPosts.lastOrNull()
+        }
 
         sortedAll.addAll(sortedPosts)
         Logger.info("Add ${sortedAll.size - wasCount} posts to aggregator")

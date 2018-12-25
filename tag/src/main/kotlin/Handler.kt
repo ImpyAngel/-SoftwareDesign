@@ -1,6 +1,14 @@
 import org.joda.time.DateTime
 
-data class Post(val id: Long, val date: DateTime)
+data class Post(val id: Long, val date: DateTime) {
+    operator fun inc(): Post {
+        return Post(id + 1, date.minusMinutes(1))
+    }
+
+    companion object {
+        val zero = Post(0, DateTime.now())
+    }
+}
 
 const val MAX_REQUEST_COUNT = 50
 

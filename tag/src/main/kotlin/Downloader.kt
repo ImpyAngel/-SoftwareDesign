@@ -3,13 +3,10 @@ import com.google.gson.JsonDeserializer
 import com.google.gson.JsonElement
 import com.google.gson.annotations.SerializedName
 import io.ktor.client.HttpClient
-import io.ktor.client.call.call
 import io.ktor.client.features.json.GsonSerializer
 import io.ktor.client.features.json.JsonFeature
 import io.ktor.client.request.get
 import io.ktor.client.request.parameter
-import io.ktor.client.response.readBytes
-import kotlinx.io.charsets.decodeUtf8ResultCombine
 import org.joda.time.DateTime
 import java.io.FileInputStream
 import java.lang.reflect.Type

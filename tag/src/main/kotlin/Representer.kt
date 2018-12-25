@@ -10,7 +10,6 @@ class RepresentImpl : Represent {
                 addZero((i + 1) % 24) + ":00"
     }
 
-
     override fun printDiagram(diagram: Diagram?): String =
         diagram?.joinToString("\n") { (date, count) ->
             addZero(date.day) + " " + handleHour(date.hour) + " -- " + count
