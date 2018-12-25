@@ -1,4 +1,4 @@
 # SoftwareDesign
 
 - [ ] LRUCache
-- [ ] VK tag counter
+- [x] VK tag counter
