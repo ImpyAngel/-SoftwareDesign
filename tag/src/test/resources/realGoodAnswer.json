@@ -1,0 +1,194 @@
+ { "response": {
+    "items": [{
+      "id": 5353,
+      "date": 1545682202,
+      "owner_id": 86236358,
+      "from_id": 86236358,
+      "post_type": "post",
+      "text": "Серьёзней отнестись к учебе, уделять больше времени своим любимым и близким, воплотить в жизнь свою мечту о работе. И, конечно , не раскидываться обещаниями за зря #ВНовомГодуЯОбещаю",
+      "attachments": [{
+        "type": "link",
+        "link": {
+          "url": "https://vk.com/landings/vk2019",
+          "title": "Новогоднее обещание",
+          "caption": "m.vk.com",
+          "description": "",
+          "photo": {
+            "id": 1,
+            "owner_id": 100,
+            "album_id": -2,
+            "sizes": [{
+              "src": "https://vk.com/im...k2019/snippet_s.jpg",
+              "type": "s",
+              "width": 300,
+              "height": 150
+            }, {
+              "src": "https://vk.com/im...k2019/snippet_m.jpg",
+              "type": "m",
+              "width": 600,
+              "height": 299
+            }, {
+              "src": "https://vk.com/im...k2019/snippet_x.jpg",
+              "type": "x",
+              "width": 800,
+              "height": 399
+            }],
+            "date": 1545682204,
+            "text": "",
+            "src_small": "https://vk.com/im...k2017/snippet_s.jpg",
+            "src_big": "https://vk.com/im...k2017/snippet_x.jpg"
+          },
+          "button": {
+            "title": "Открыть",
+            "action": {
+              "type": "open_url",
+              "url": "https://vk.com/landings/vk2019"
+            }
+          },
+          "is_favorite": false
+        }
+      }],
+      "post_source": {
+        "type": "vk"
+      },
+      "comments": {
+        "count": 0,
+        "can_post": 0,
+        "groups_can_post": true
+      },
+      "likes": {
+        "count": 0,
+        "user_likes": 0,
+        "can_like": 1,
+        "can_publish": 1
+      },
+      "reposts": {
+        "count": 0,
+        "user_reposted": 0
+      },
+      "is_favorite": false
+    }, {
+      "id": 5753,
+      "date": 1545682179,
+      "owner_id": -163952244,
+      "from_id": -163952244,
+      "post_type": "post",
+      "text": "Кхех, посидели с Аей, курочки копчёной поели. Ну, как поели. Она и мою ножку завахала, пока я писала про неё. Вредная сучка.",
+      "marked_as_ads": 0,
+      "attachments": [{
+        "type": "link",
+        "link": {
+          "url": "https://m.vk.com/...oprosov-ob-aeremsis",
+          "title": "100 вопросов об Аеремсис:",
+          "caption": "m.vk.com",
+          "description": "Статья",
+          "photo": {
+            "id": 456241900,
+            "album_id": -66,
+            "owner_id": -163952244,
+            "user_id": 100,
+            "sizes": [{
+              "type": "s",
+              "url": "https://pp.userap...a09/QTG2YY4iqyo.jpg",
+              "width": 75,
+              "height": 48
+            }, {
+              "type": "m",
+              "url": "https://pp.userap...a0a/_9OTwNfIugw.jpg",
+              "width": 130,
+              "height": 83
+            }, {
+              "type": "x",
+              "url": "https://pp.userap...a0b/rnaHDgre5Sc.jpg",
+              "width": 604,
+              "height": 385
+            }, {
+              "type": "y",
+              "url": "https://pp.userap...a0c/PHs411QHk6A.jpg",
+              "width": 807,
+              "height": 514
+            }, {
+              "type": "z",
+              "url": "https://pp.userap...a0d/9M3BaN5Jiy8.jpg",
+              "width": 1280,
+              "height": 815
+            }, {
+              "type": "w",
+              "url": "https://pp.userap...a0e/5SIMJHKsndk.jpg",
+              "width": 2200,
+              "height": 1400
+            }, {
+              "type": "o",
+              "url": "https://pp.userap...a0f/ie73WORH7Rw.jpg",
+              "width": 130,
+              "height": 87
+            }, {
+              "type": "p",
+              "url": "https://pp.userap...a10/6b6gOqdWBOk.jpg",
+              "width": 200,
+              "height": 133
+            }, {
+              "type": "q",
+              "url": "https://pp.userap...a11/GCtCRtx-Hvw.jpg",
+              "width": 320,
+              "height": 213
+            }, {
+              "type": "r",
+              "url": "https://pp.userap...a12/t501JyKr2os.jpg",
+              "width": 510,
+              "height": 340
+            }],
+            "text": "",
+            "date": 1545682020
+          },
+          "button": {
+            "title": "Читать",
+            "action": {
+              "type": "open_url",
+              "url": "https://m.vk.com/...oprosov-ob-aeremsis"
+            }
+          }
+        }
+      }, {
+        "type": "audio",
+        "audio": {
+          "id": 456242950,
+          "owner_id": 2000106728,
+          "artist": "Perturbator",
+          "title": "Assault",
+          "duration": 25,
+          "date": 1545682179,
+          "url": "https://vk.com/mp...api_unavailable.mp3",
+          "is_hq": true,
+          "track_code": "b813ec7f6/b+OUZGSWuqUv3c7zuyB68VAWdAjkp+9Xn8Zd0t",
+          "is_explicit": false
+        }
+      }],
+      "post_source": {
+        "type": "vk"
+      },
+      "comments": {
+        "count": 0,
+        "can_post": 1,
+        "groups_can_post": true
+      },
+      "likes": {
+        "count": 0,
+        "user_likes": 0,
+        "can_like": 1,
+        "can_publish": 1
+      },
+      "reposts": {
+        "count": 0,
+        "user_reposted": 0
+      },
+      "views": {
+        "count": 8
+      },
+      "is_favorite": false
+    }],
+    "count": 1000,
+    "total_count": 10044695,
+    "next_from": "2/-163952244_5753"
+  }
+}

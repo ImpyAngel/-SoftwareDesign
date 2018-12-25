@@ -1,0 +1,3 @@
+GET https://api.vk.com/method/newsfeed.search?q="NewYear"&access_token=123&v=5.92
+
+###

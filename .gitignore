@@ -2,8 +2,10 @@ build
 *.iml
 
 .gradle
-.idea/misc.xml
-.idea/gradle.xml
-.idea/workspace.xml
+**/.idea/misc.xml
+**/.idea/gradle.xml
+**/.idea/workspace.xml
+**/.idea/vcs.xml
+**/.idea/httpRequests/
 
 local.property
