@@ -4,6 +4,7 @@ import com.nhaarman.mockitokotlin2.mock
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
+import ru.akirakozov.sd.refactoring.DBLayer
 import ru.akirakozov.sd.refactoring.servlet.AddProductServlet
 import ru.akirakozov.sd.refactoring.servlet.GetProductsServlet
 import ru.akirakozov.sd.refactoring.servlet.QueryServlet
@@ -21,36 +22,19 @@ import kotlin.test.assertEquals
 
 class TestAdd {
     companion object {
-        private fun <T> executeQuery(block: Statement.() -> T): T =
-                DriverManager.getConnection("jdbc:sqlite:test.db").use { c ->
-                    val stmt = c.createStatement()
-                    val ans = block(stmt)
-                    stmt.close()
-                    ans
-                }
-
-        private fun tryCreate() = executeQuery {
-            executeUpdate("CREATE TABLE IF NOT EXISTS PRODUCT" +
-                    "(ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
-                    " NAME           TEXT    NOT NULL, " +
-                    " PRICE          INT     NOT NULL)")
-        }
-
-        private fun dropAll() = executeQuery {
-            executeUpdate("DELETE FROM PRODUCT")
-        }
+        private val dbLayer = DBLayer()
 
         @BeforeAll
         @JvmStatic
-        fun beforeAll() {
+        fun beforeAll() = with(dbLayer){
             tryCreate()
-            dropAll()
+            cleanUp()
         }
     }
 
     @AfterEach
     fun afterEach() {
-        dropAll()
+        dbLayer.cleanUp()
     }
 
     private fun mockAddRequest(i: Int) = mock<HttpServletRequest> {
