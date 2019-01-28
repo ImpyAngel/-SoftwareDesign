@@ -1,10 +1,27 @@
+import java.io.File
+import java.io.FileInputStream
+import java.util.*
+
 /**
  *
  * @autor Toropin Konstantin (impy.bian@gmail.com)
  */
-class AdjacencyMatrixGraph(vertexNumber: Int, drawingGraph: DrawingGraph) : Graph(vertexNumber, drawingGraph) {
-    private val adjacencyMatrix: MutableList<MutableList<Boolean>> = MutableList(vertexNumber) { MutableList(vertexNumber) { false } }
+class AdjacencyMatrix(drawingApi: DrawingApi) : Graph(drawingApi) {
+    private var adjacencyMatrix: MutableList<MutableList<Boolean>> = mutableListOf()
 
+    override fun readGraph(file: File) {
+        Scanner(FileInputStream(file)).use {
+            vertexNumber = it.nextInt()
+            adjacencyMatrix = MutableList(vertexNumber) { MutableList(vertexNumber) { false } }
+            for (i in 0 until vertexNumber) {
+                for (j in 0 until vertexNumber) {
+                    adjacencyMatrix[i][j] = it.nextInt() != 0
+                }
+            }
+        }
+    }
+
+    override var vertexNumber: Int = 0
     override fun drawLinks() {
         adjacencyMatrix.forEachIndexed { u, it ->
             it.forEachIndexed { v, value ->

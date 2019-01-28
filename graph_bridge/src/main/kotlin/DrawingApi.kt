@@ -14,7 +14,7 @@ import java.awt.event.WindowEvent
  */
 
 
-interface DrawingGraph {
+interface DrawingApi {
     val drawingAreaWidth: Int
     val drawingAreaHeight: Int
 
@@ -29,7 +29,7 @@ sealed class Figure {
     data class Link(val from: Coordinate, val to: Coordinate) : Figure()
 }
 
-class AwtGraphDrawing(override val drawingAreaWidth: Int, override val drawingAreaHeight: Int) : Frame(), DrawingGraph {
+class AwtDrawingApi(override val drawingAreaWidth: Int, override val drawingAreaHeight: Int) : Frame(), DrawingApi {
     val figures: MutableSet<Figure> = mutableSetOf()
 
     override fun drawAll() {
@@ -68,15 +68,3 @@ class AwtGraphDrawing(override val drawingAreaWidth: Int, override val drawingAr
         figures.add(Figure.Link(from, to))
     }
 }
-
-
-
-
-//    val awt = AwtGraphDrawing(600, 600)
-//    val awt = SwingDrawingGraph(600, 600)
-//    val graph = AdjacencyListGraph(10, awt)
-//    graph.addLink(0, 2)
-//    graph.addLink(0, 4)
-//    graph.addLink(3, 1)
-//    graph.drawGraph()
-
